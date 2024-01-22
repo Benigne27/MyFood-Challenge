@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+#navigation{
+    height: 10vh;
+    width: 100%;
+    background: white;
+    position: fixed;
+    margin-bottom: 30px;
+}
+#navigation ul{
+    display: flex;
+    font-size: 30px;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    
+}
+#navigation ul li{
+    margin: 10px auto;
+    list-style: none;
+}
+#navigation ul li a{
+    color: black;
+}
+#navigation ul li a:hover{
+    background-color: rgb(192, 192, 192);
+    padding: 5px;
+}
+
+#space{
+    height: 100px;
+}
+
+#food-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 15px;
+
+}
+
+.image{
+    width: 20%;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.text{
+    font-size: 17px;
+}
+
+.food-name{
+    font-size: 25px;
+}
+
+#number-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.slide{
+    padding: 10px 15px;   
+}
+.slide:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#slide{
+    background-color: black;
+    color: white;
+    padding: 10px 15px; 
+}
+
+#slide:hover{
+    background-color: rgb(170, 170, 170);
+    color: black;
+    cursor: pointer;
+}
+
+.horizontal{
+    margin: 50px 110px;
+    color: rgb(219, 216, 216);
+}
+
+#the-chef{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin:20px 110px ;
+    text-align: center;
+}
+
+.italic{
+    font-style: italic;
+    font-size: 17px;
+}
+#credits a{
+    text-decoration: underline;
+    color: black;
+    
+}
+#footer{
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-bottom: 30px; */
+}
+
+.footer{
+    width: 20%;
+}
+#footer1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#blogs .image-hover{
+    display: flex; 
+    height: 70px;
+    gap: 15px; 
+    padding: 10px 20px;
+}
+
+#blogs .image-hover:hover{
+    background-color: rgb(170, 170, 170);
+}
+
+#blogs .image-hover img{
+    height: 50px;
+    width: 50px;
+}
+
+.blog-post{
+    display: flex;
+    flex-direction: column;
+} 
+#all-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+#all-tags p{
+    font-size: small;
+    padding: 2px 4px;
+}
+
+#tags .travel{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#tags .no-travel{
+    background-color: rgb(102, 102, 102);
+    color: white;
+    text-align: center;
+}
+
+@media (width <850px){
+    #navigation ul{
+        font-size: 23px;
+    } 
+    .image{
+        height: 430px;
+    }
+    .text{
+        font-size: 13px;
+    }
+    .food-name{
+        font-size: 18px;
+    }
+    #the-chef img{
+        width: 400px;
+    }
+    #blogs .image-hover{
+        font-size: 13px;
+    }
+}
+
+@media (width <601px ){
+    #navigation ul{
+        font-size: 18px;
+    } 
+    #space{
+        height: 70px;
+    }
+    .image{
+        height: 370px;
+    }
+    .text{
+        font-size: 12px;
+    }
+    .food-name{
+        font-size: 15px;
+    }
+    #the-chef img{
+        width: 380px;
+    }
+    #credits{
+        font-size: 12px;
+    }
+    #all-tags{
+        gap: 2px; 
+    }
+    #all-tags p{
+        font-size: x-small;
+        padding: 1px 2px;
+    }
+    #blogs .image-hover img{
+        height: 40px;
+        width: 40px;
+    }
+    #blogs .image-hover{
+        font-size: 12px;
+    }
+
+}
+@media (width <400px ){
+    #navigation ul{
+        font-size: 15px;
+    } 
+    #space{
+        height: 50px;
+    }
+    .image{
+        height: 350px;
+    }
+    .text{
+        font-size: 12px;
+    }
+    .food-name{
+        font-size: 13px;
+    }
+    #the-chef img{
+        width: 380px;
+    }
+    #credits{
+        font-size: 12px;
+    }
+    #all-tags{
+        gap: 2px; 
+    }
+    #all-tags p{
+        font-size: x-small;
+        padding: 1px 2px;
+    }
+    #blogs .image-hover img{
+        height: 40px;
+        width: 40px;
+    }
+    #blogs .image-hover{
+        font-size: 12px;
+    }
+}
